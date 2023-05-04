@@ -1,0 +1,75 @@
+.tableau{
+    position: relative;
+    left: 49%;
+    background-color: rgba(0, 132, 255, 0.24);
+    top: 25px;
+}
+.survole:hover{ 
+    background-color:rgb(165, 42, 42);
+
+}
+.vert:hover{
+    background-color:green
+}
+@font-face {
+    font-family:'Times New Roman', Times, serif ;
+    src: url('');
+    font-style: normal; 
+}
+html{
+    
+    background-color: rgba(98, 43, 226, 0.315);
+    background-image: url("Budget.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.saisi:focus{
+    background-color: rgb(165, 42, 144);
+}
+.formulaire{
+    background-color: rgba(0, 132, 255, 0.24);
+    right: 20%;
+    
+}
+
+.contener{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:center;
+
+
+}
+#descriptiondep{
+    height: 70px;
+}
+#desp{
+    height:60px ;
+}
+#ajoutedepense:hover{
+    background-color: aqua;
+}
+#ajoutrevenu:hover{
+    background-color: aqua;
+}
+#ajoutedepense{
+    position: relative;
+    left: 170px;
+    top: 153px;
+}
+#ajoutrevenu{
+    position: relative;
+    left:550px;
+    top: 153px;
+    
+}
+
+#tableDepense{
+     background-color: rgba(0, 132, 255, 0.24);
+     position: relative;
+    left:163px;
+    bottom:74px;
+}
+.block{
+    display: block;
+}

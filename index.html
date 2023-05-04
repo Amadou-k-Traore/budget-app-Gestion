@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head> 
+        <meta charset="UTF-8"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="stylesheet" type="text/css" href="Style.css">
+        <script src="Script.js" defer></script>
+        <title class="recup" >Gestion de Budget</title>
+    </head>
+    <body>
+    <center><h1><b>G-Budget Financial</b></h1></center>
+    <div class="contener">
+        <div><button type="submit" id="ajoutedepense" >Ajoute Depense</button></div>
+        <div><button type="submit" id="ajoutrevenu" >Ajoute Revenu</button></div>
+        <div>
+        <div>
+        <div id="formulairedepense">
+            <div>
+             <div>
+                <table width="400px" height="150px" class="formulaire"  id="table"  >
+                    <form onsubmit="recupDepense()">
+                        <tr>
+                            <b><td><label for="descriptionDEP"><b>DESCRIPTION DEPENSE</b></label></td></b>
+                            <td><input type="text" id="descriptionDEP" name="descriptions" placeholder="Description du depense"></td>
+                        </tr>
+                        <tr>
+                            <b><td><label for="montantDEP"><b>MONTANT DEPENSE</b></label></td></b>
+                            <td><input  type="text" id="montantDEP" name="somme"  placeholder="Le montant du depense"></td>       
+                        </tr>  
+                        <tr>
+                            <td><b>ENVOIYER DEPENSE</b></td>
+                            <td><button class="vert"  id="bouton" class="depense" ><b>ENVOIYER</b></button></td>
+                        </tr>
+                    </form>
+                </table>
+            </div>
+            </div>
+            </div>
+            <div>
+                <table border="3" class="tableau" width="500px" height="100px" >
+                    <tr><th colspan="2" id="longeurth" >Revenu (fcfa)</th>
+                        <th>Action</th>
+                    </tr>
+                    <tr>
+                        <td id="desp" ><b>Description du revenu</b></td>
+                        <td><b>Montant du revenu verser</b></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div classe="block">
+        <div>
+        <div id="formulairevenu" >
+            <table width="400px" height="150px" class="formulaire" >
+                <form onsubmit="recupRevenu()">
+                    <tr>
+                        <b><td><label for="descriptionrev"><b>DESCRIPTION REVENU</b></td></label></td></b>
+                        <td><input type="text" id="descriptionrev" name="descriptions" placeholder="Description du revenu"></td>
+                    </tr>
+                    <tr>
+                        <b><td><label for="montantrev"><b>MONTANT REVENU</b></label></td></b>
+                        <td><input  type="text" id="montantrev" name="somme"  placeholder="Le montant du revenu"></td>       
+                    </tr>  
+                    <tr>
+                        <b><td><b>ENVOIYER REVENU</b></td></b>
+                        <td><button class="vert"  id="boutonn" ><b>ENVOIYER</b></button></td>
+                    </tr>
+                </form>
+            </table>
+        </div>
+        <div>
+            <table border="3" id="tableDepense" width="500px" height="100px" >
+                <tr>
+                    <th colspan="2" id="longthRevenu">Depense (fcfa)</th>
+                    <th>Action</th>       
+                </tr>
+                <tr>
+                    <td><b>Description du Depense</b></td>
+                    <td><b>Montant Depense</b><td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        </div>
+    </div>
+    </body>
+    </html>
+    
