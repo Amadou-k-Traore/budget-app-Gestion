@@ -9,78 +9,78 @@
         <title class="recup" >Gestion de Budget</title>
     </head>
     <body>
-    <center><h1><b>G-Budget Financial</b></h1></center>
-    <div class="container">
-        <div>
-            <button type="submit" id="ajoutedepense">Ajoute Depense</button>
-        </div>
-        <div id="formulairedepense">
+        <center><h1><b>G-Budget Financial</b></h1></center>
+        <div class="container">
             <div>
-                <table width="400px" height="150px" class="formulaire"  id="table">
+                <button type="submit" id="ajoutedepense">Ajoute Depense</button>
+            </div>
+            <div id="formulairedepense">
+                <div>
+                    <table width="400px" height="150px" class="formulaire"  id="table">
+                        <form>
+                            <tr>
+                                <td><b><label for="descriptionDEP"><b>DESCRIPTION DEPENSE</b></label></td>
+                                <td><b><input type="text" id="descriptionDEP" name="descriptions" placeholder="Description du depense"></td>
+                            </tr>
+                            <tr>
+                                <b><td><label for="montantDEP"><b>MONTANT DEPENSE</b></label></td></b>
+                                <td><input  type="text" id="montantDEP" name="somme"  placeholder="Le montant du depense"></td>
+                            </tr>  
+                            <tr>
+                                <td><b>ENVOIYER DEPENSE</b></td>
+                                <td><button class="vert"  id="bouton" class="depense" ><b>ENVOIYER</b></button></td>
+                            </tr>
+                        </form>
+                    </table>
+                </div>
+            </div>
+            <div>
+                <table border="3" id="tableDepense" width="500px" height="100px" >
+                    <tr>
+                        <th colspan="2" id="longthRevenu">Depense (fcfa)</th>
+                        <th>Action</th>       
+                    </tr>
+                    <tr>
+                        <td><b>Description du Depense</b></td>
+                        <td><b>Montant Depense</b><td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <button type="submit" id="ajoutrevenu">Ajoute Revenu</button>
+            </div>
+            <div id="formulairevenu">
+                <table width="400px" height="150px" class="formulaire">
                     <form>
                         <tr>
-                            <b><td><label for="descriptionDEP"><b>DESCRIPTION DEPENSE</b></label></td>
-                            </b><td><input type="text" id="descriptionDEP" name="descriptions" placeholder="Description du depense"></td>
+                            <b><td><label for="descriptionrev"><b>DESCRIPTION REVENU</b></td></label></td></b>
+                            <td><input type="text" id="descriptionrev" name="descriptions" placeholder="Description du revenu"></td>
                         </tr>
                         <tr>
-                            <b><td><label for="montantDEP"><b>MONTANT DEPENSE</b></label></td></b>
-                            <td><input  type="text" id="montantDEP" name="somme"  placeholder="Le montant du depense"></td>
+                            <td><b><label for="montantrev"><b>MONTANT REVENU</b></label></td></b>
+                            <td><input  type="text" id="montantrev" name="somme"  placeholder="Le montant du revenu"></td>       
                         </tr>  
                         <tr>
-                            <td><b>ENVOIYER DEPENSE</b></td>
-                            <td><button class="vert"  id="bouton" class="depense" ><b>ENVOIYER</b></button></td>
+                            <b><td><b>ENVOIYER REVENU</b></td></b>
+                            <td><button class="vert"  id="boutonn" ><b>ENVOIYER</b></button></td>
                         </tr>
                     </form>
                 </table>
             </div>
-        </div>
-        <div>
-            <table border="3" id="tableDepense" width="500px" height="100px" >
-                <tr>
-                    <th colspan="2" id="longthRevenu">Depense (fcfa)</th>
-                    <th>Action</th>       
-                </tr>
-                <tr>
-                    <td><b>Description du Depense</b></td>
-                    <td><b>Montant Depense</b><td>
-                </tr>
-            </table>
-        </div>
-        <div>
-            <button type="submit" id="ajoutrevenu">Ajoute Revenu</button>
-        </div>
-        <div id="formulairevenu">
-            <table width="400px" height="150px" class="formulaire">
-                <form>
+            <div>
+                <table border="3" class="tableau" width="500px" height="100px" classe="item">
                     <tr>
-                        <b><td><label for="descriptionrev"><b>DESCRIPTION REVENU</b></td></label></td></b>
-                        <td><input type="text" id="descriptionrev" name="descriptions" placeholder="Description du revenu"></td>
+                        <th colspan="2" id="longeurth" >Revenu (fcfa)</th>
+                        <th>Action</th>
                     </tr>
                     <tr>
-                        <b><td><label for="montantrev"><b>MONTANT REVENU</b></label></td></b>
-                        <td><input  type="text" id="montantrev" name="somme"  placeholder="Le montant du revenu"></td>       
-                    </tr>  
-                    <tr>
-                        <b><td><b>ENVOIYER REVENU</b></td></b>
-                        <td><button class="vert"  id="boutonn" ><b>ENVOIYER</b></button></td>
+                        <td id="desp" ><b>Description du revenu</b></td>
+                        <td><b>Montant du revenu verser</b></td>
+                        <td></td>
                     </tr>
-                </form>
-            </table>
+                </table>
+            </div>
         </div>
-        <div>
-            <table border="3" class="tableau" width="500px" height="100px" >
-                <tr>
-                    <th colspan="2" id="longeurth" >Revenu (fcfa)</th>
-                    <th>Action</th>
-                </tr>
-                <tr>
-                    <td id="desp" ><b>Description du revenu</b></td>
-                    <td><b>Montant du revenu verser</b></td>
-                    <td></td>
-                </tr>
-            </table>
-        </div>
-    </div>
     </body>
 </html>
     

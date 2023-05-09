@@ -215,7 +215,8 @@ let modaledepense = document.getElementById("formulairedepense");
 let modalerevenu = document.getElementById("formulairevenu");
 
 ajoutedepense.onclick = function(){
-         modaledepense.style.display="block"
+        modaledepense.style.display = "block"
+        
 }
 ajoutrevenu.onclick = function(){
         modalerevenu.style.display="block"
