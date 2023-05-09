@@ -1,8 +1,13 @@
+::before, ::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 .tableau{
     position: relative;
     left: 49%;
     background-color: rgba(0, 132, 255, 0.24);
-    top: 25px;
+    top:230px;
 }
 .survole:hover{ 
     background-color:rgb(165, 42, 42);
@@ -18,33 +23,29 @@
 }
 html{
     
-    background-color: rgba(98, 43, 226, 0.315);
-    background-image: url("Budget.jpg");
+    background-color: #03203C;
+    background-image: url("Budget.jpg") ;
     background-repeat: no-repeat;
     background-size: cover;
+   
+
 }
 .saisi:focus{
     background-color: rgb(165, 42, 144);
 }
 .formulaire{
     background-color: rgba(0, 132, 255, 0.24);
-    right: 20%;
-    
+    position: relative;
+    right: 10%;
 }
-
-.contener{
+.container{
     display: flex;
+    flex-direction:row;
     flex-wrap: wrap;
-    flex-direction: row;
     justify-content:center;
-
-
 }
 #descriptiondep{
     height: 70px;
-}
-#desp{
-    height:60px ;
 }
 #ajoutedepense:hover{
     background-color: aqua;
@@ -53,23 +54,26 @@ html{
     background-color: aqua;
 }
 #ajoutedepense{
-    position: relative;
-    left: 170px;
-    top: 153px;
+    position: absolute;
+    right: 880px;
+    top: 275px;
 }
 #ajoutrevenu{
-    position: relative;
-    left:550px;
-    top: 153px;
-    
+    position: absolute;
+    left:820px;
+    top: 275px;
 }
 
 #tableDepense{
-     background-color: rgba(0, 132, 255, 0.24);
-     position: relative;
-    left:163px;
-    bottom:74px;
+    background-color: rgba(0, 132, 255, 0.24);
+    position: relative;
+    left:161px;
+    top: 130px;
 }
-.block{
-    display: block;
+#formulairedepense{
+    display: none;
+}
+#formulairevenu{
+    display: none;
+    
 }
